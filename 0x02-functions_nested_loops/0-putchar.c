@@ -11,12 +11,11 @@ int main(void)
 
 	char name[] = "_putchar";
 
-	while (i < 9)
+	while (i < 8)
 	{
 		_putchar(name[i]);
 		i++;
 	}
-
 	_putchar('\n');
 
 	return (0);

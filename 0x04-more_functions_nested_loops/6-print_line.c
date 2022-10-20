@@ -2,7 +2,7 @@
 
 /**
 *print_line - print lines according to input integer
-*n: integer to be passed into the loop
+*@n: integer to be passed into the loop
 *Return: Always 0 (success)
 */
 void print_line(int n)
@@ -11,11 +11,6 @@ void print_line(int n)
 
 	for (i = 0; i <= n; i++)
 	{
-		if (n <= 0)
-		{
-		_putchar('\n');
-		}
-
 		_putchar('_');
 	}
 

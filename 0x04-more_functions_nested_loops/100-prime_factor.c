@@ -12,7 +12,7 @@ int main(void)
 
 	long int p;
 
-	for (p = 2; p < x; p++)
+	for (p = 2; p < n; p++)
 	{
 		if (n % p == 0)
 		{

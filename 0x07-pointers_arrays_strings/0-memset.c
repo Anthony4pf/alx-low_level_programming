@@ -5,6 +5,7 @@
 *@s: string
 *@b: constant byte
 *@n: index
+*Return: *s
 */
 
 char *_memset(char *s, char b, unsigned int n)
@@ -16,5 +17,5 @@ char *_memset(char *s, char b, unsigned int n)
 		s[i] = b;
 	}
 
-	return(s);
+	return (s);
 }

@@ -23,6 +23,10 @@ int main(int argc, char *argv[])
 
 		if (i == argc)
 			printf("%d\n", sum);
+		else if (i == 1)
+		{
+			printf("0\n");
+		}
 		else
 		{
 			printf("Error\n");

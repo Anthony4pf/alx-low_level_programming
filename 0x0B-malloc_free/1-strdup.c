@@ -11,6 +11,7 @@
 char *_strdup(char *str)
 {
 	unsigned int i, j;
+	char *string;
 
 	if (str == NULL)
 		return (NULL);
@@ -18,7 +19,7 @@ char *_strdup(char *str)
 	for (i = 0; str[i]; i++)
 	;
 
-	char *string = malloc(sizeof(char) * i + 1);
+	string = (char *)malloc(sizeof(char) * i + 1);
 
 	if (string == NULL)
 		return (NULL);

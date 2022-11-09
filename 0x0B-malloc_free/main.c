@@ -24,13 +24,13 @@ int main(void)
 
 
 
-    s = _strdup("ALX SE");
+    s = str_concat("Betty ", "Holberton");
 
     if (s == NULL)
 
     {
 
-        printf("failed to allocate memory\n");
+        printf("failed\n");
 
         return (1);
 

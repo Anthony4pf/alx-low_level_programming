@@ -28,61 +28,61 @@ int main(void)
 
     head = NULL;
 
-    add_node(&head, "Alexandro");
+    add_node_end(&head, "Anne");
 
-    add_node(&head, "Asaia");
+    add_node_end(&head, "Colton");
 
-    add_node(&head, "Augustin");
+    add_node_end(&head, "Corbin");
 
-    add_node(&head, "Bennett");
+    add_node_end(&head, "Daniel");
 
-    add_node(&head, "Bilal");
+    add_node_end(&head, "Danton");
 
-    add_node(&head, "Chandler");
+    add_node_end(&head, "David");
 
-    add_node(&head, "Damian");
+    add_node_end(&head, "Gary");
 
-    add_node(&head, "Daniel");
+    add_node_end(&head, "Holden");
 
-    add_node(&head, "Dora");
+    add_node_end(&head, "Ian");
 
-    add_node(&head, "Electra");
+    add_node_end(&head, "Ian");
 
-    add_node(&head, "Gloria");
+    add_node_end(&head, "Jay");
 
-    add_node(&head, "Joe");
+    add_node_end(&head, "Jennie");
 
-    add_node(&head, "John");
+    add_node_end(&head, "Jimmy");
 
-    add_node(&head, "John");
+    add_node_end(&head, "Justin");
 
-    add_node(&head, "Josquin");
+    add_node_end(&head, "Kalson");
 
-    add_node(&head, "Kris");
+    add_node_end(&head, "Kina");
 
-    add_node(&head, "Marine");
+    add_node_end(&head, "Matthew");
 
-    add_node(&head, "Mason");
+    add_node_end(&head, "Max");
 
-    add_node(&head, "Praylin");
+    add_node_end(&head, "Michael");
 
-    add_node(&head, "Rick");
+    add_node_end(&head, "Ntuj");
 
-    add_node(&head, "Rick");
+    add_node_end(&head, "Philip");
 
-    add_node(&head, "Rona");
+    add_node_end(&head, "Richard");
 
-    add_node(&head, "Siphan");
+    add_node_end(&head, "Samantha");
 
-    add_node(&head, "Sravanthi");
+    add_node_end(&head, "Stuart");
 
-    add_node(&head, "Steven");
+    add_node_end(&head, "Swati");
 
-    add_node(&head, "Tasneem");
+    add_node_end(&head, "Timothy");
 
-    add_node(&head, "William");
+    add_node_end(&head, "Victor");
 
-    add_node(&head, "Zee");
+    add_node_end(&head, "Walton");
 
     print_list(head);
 

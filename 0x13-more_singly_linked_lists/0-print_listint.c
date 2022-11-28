@@ -2,7 +2,7 @@
 
 /**
 *print_listint - print a singly linked list
-@h: head node of the list
+*@h: head node of the list
 *Return: number of nodes
 */
 

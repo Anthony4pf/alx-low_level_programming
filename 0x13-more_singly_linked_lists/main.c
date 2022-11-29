@@ -24,8 +24,6 @@ int main(void)
 
     listint_t *head;
 
-    int sum;
-
 
 
     head = NULL;
@@ -46,9 +44,13 @@ int main(void)
 
     add_nodeint_end(&head, 1024);
 
-    sum = sum_listint(head);
+    print_listint(head);
 
-    printf("sum = %d\n", sum);
+    printf("-----------------\n");
+
+    insert_nodeint_at_index(&head, 5, 4096);
+
+    print_listint(head);
 
     free_listint2(&head);
 

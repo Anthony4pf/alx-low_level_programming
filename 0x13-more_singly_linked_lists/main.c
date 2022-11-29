@@ -24,7 +24,7 @@ int main(void)
 
     listint_t *head;
 
-    listint_t *node;
+    int sum;
 
 
 
@@ -46,13 +46,9 @@ int main(void)
 
     add_nodeint_end(&head, 1024);
 
-    print_listint(head);
+    sum = sum_listint(head);
 
-    node = get_nodeint_at_index(head, 5);
-
-    printf("%d\n", node->n);
-
-    print_listint(head);
+    printf("sum = %d\n", sum);
 
     free_listint2(&head);
 

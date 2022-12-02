@@ -34,7 +34,7 @@ int main(void)
 
     printf("%u\n", n);
 
-    n = flip_bits(1024, 1025);
+    n = flip_bits(0, 0);
 
     printf("%u\n", n);
 

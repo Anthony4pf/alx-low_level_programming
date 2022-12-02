@@ -1,6 +1,6 @@
 #include "main.h"
 
-int get_bit(unsigned long int n, unsigned int index);
+int get_index(unsigned long int n, unsigned int index);
 
 /**
 *flip_bits - returns the number of bits you would need to flip to get a new num

@@ -14,17 +14,12 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned int i, count = 0;
 	int digit1, digit2;
 
-	if (n == 0 && m == 0)
-		return (0);
-
 	for (i = 0; i < 32; i++)
 	{
 		digit1 = get_index(n, i);
 		digit2 = get_index(m, i);
 
-		if (digit1 == digit2)
-			continue;
-		else
+		if (digit1 != digit2)
 			count++;
 	}
 

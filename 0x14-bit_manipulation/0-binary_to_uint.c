@@ -24,8 +24,9 @@ unsigned int binary_to_uint(const char *b)
 
 	while (b >= s)
 	{
-		if (*b < '0' && *b > '1')
+		if (*b < '0' || *b > '1')
 			return (0);
+
 		digit = *b - '0';
 		value = digit * (1 << power);
 		sum += value;

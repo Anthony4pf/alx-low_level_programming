@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s", argv[1]);
 		exit(98); }
-	fd_w = open(argv[2], O_CREAT | O_TRUNC | O_RDWR, 0664);
+	fd_w = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd_w < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s", argv[2]);

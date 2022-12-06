@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	int fd_r, fd_w, x, y, m, n;
-	char buf[1024];
+	char buf[BUFSIZ];
 
 	if (argc != 3)
 	{
@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98); }
-	x = read(fd_r, buf, 1024);
+	x = read(fd_r, buf, BUFSIZ);
 	if (x < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);

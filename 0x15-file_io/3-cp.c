@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	int fd_r, fd_w, x, y, m, n;
-	char buf[BUFSIZ];
+	char buf[1024];
 
 	if (argc != 3)
 	{
@@ -19,22 +19,22 @@ int main(int argc, char *argv[])
 	fd_r = open(argv[1], O_RDONLY);
 	if (fd_r < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98); }
-	x = read(fd_r, buf, BUFSIZ);
+	x = read(fd_r, buf, 1024);
 	if (x < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98); }
 	fd_w = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd_w < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99); }
 	y = write(fd_w, buf, x);
 	if (y < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99); }
 	m = close(fd_r);
 	n = close(fd_w);

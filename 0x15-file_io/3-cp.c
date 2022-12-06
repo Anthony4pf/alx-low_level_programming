@@ -20,9 +20,9 @@ int main(int argc, char *argv[])
 	if (fd_r < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(98); }
+		eixit(98); }
 	x = read(fd_r, buf, BUFSIZ);
-	if (x < 0)
+	if (x == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98); }
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99); }
 	y = write(fd_w, buf, x);
-	if (y < 0 || y != x)
+	if (y != x)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99); }

@@ -1,6 +1,6 @@
 #include "lists.h"
 
-/*
+/**
 *free_dlistint - frees a doubly linked list
 *@head: address of the first node of the list
 *Return: void

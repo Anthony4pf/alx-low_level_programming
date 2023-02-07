@@ -10,22 +10,21 @@ void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *temp = NULL;
 	unsigned long int i;
-	int comma = 0;
+	short int comma = 0;
 
 	if (ht == NULL)
 		return;
 
 	putchar('{');
-
 	for (i = 0; i < ht->size; i++)
 	{
 		temp = ht->array[i];
-		while (temp)
+		while (temp != NULL)
 		{
 			if (comma)
 				printf(", ");
 
-			printf("%s: %s", temp->key, temp->value);
+			printf("'%s': '%s'", temp->key, temp->value);
 
 			if (comma == 0)
 				comma = 1;
